@@ -1,0 +1,70 @@
+.btn-container {
+    --_border-radius: 1em;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 2rem;
+    height: fit-content;
+    padding: 1rem 2rem;
+    margin-block: auto;
+    cursor: pointer;
+    isolation: isolate;
+    border-radius: calc(var(--_border-radius) * 1.2);
+    width: max-content;
+}
+
+.background {
+    --border-width: 8px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: calc(100% - var(--border-width));
+    height: calc(100% - var(--border-width));
+    border-radius: var(--_border-radius);
+    background: var(--color-background);
+    translate: calc(var(--border-width) / 2) calc(var(--border-width) / 2);
+}
+
+/* Title Btn */
+
+.titleBtn {
+    margin-left: 2em;
+    background: linear-gradient(
+        45deg,
+        var(--color-accent-1),
+        var(--color-shadow-2)
+    );
+}
+
+.titleBtn:hover svg:first-child {
+    animation: arrowHoverFirst 1s infinite ease-in-out;
+}
+
+.titleBtn:hover svg:last-child {
+    animation: arrowHoverLast 1s infinite ease-in-out;
+}
+
+@keyframes arrowHoverFirst {
+    to {
+        translate: 0 100%;
+    }
+}
+
+@keyframes arrowHoverLast {
+    to {
+        translate: 0 100%;
+    }
+}
+
+/* Load more btn */
+
+.loadMoreBtn {
+    margin: 5rem auto;
+    background: linear-gradient(
+        45deg,
+        var(--color-contrast-1),
+        var(--color-contrast-2)
+    );
+}

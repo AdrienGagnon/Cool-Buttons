@@ -1,0 +1,80 @@
+.cool-buttons-title {
+    color: var(--color-font);
+    font-weight: 900;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+
+    /* nice font to span all screen on small screens */
+    font-size: clamp(3rem, 10vw, 10rem);
+    font-size: max(5.125rem, min(13.3333vw + 2rem, 18rem));
+}
+
+.title__word > span {
+    line-height: 0.9em;
+    text-shadow: 0 0 10px var(--color-accent-1),
+        3px 1px 1px var(--color-shadow-1), 2px 2px 1px var(--color-shadow-2),
+        4px 2px 1px var(--color-shadow-1), 3px 3px 1px var(--color-shadow-2),
+        5px 3px 1px var(--color-shadow-1), 4px 4px 1px var(--color-shadow-2),
+        6px 4px 1px var(--color-shadow-1), 5px 5px 1px var(--color-shadow-2),
+        7px 5px 1px var(--color-shadow-1), 6px 6px 1px var(--color-shadow-2),
+        8px 6px 1px var(--color-shadow-1), 7px 7px 1px var(--color-shadow-2),
+        9px 7px 1px var(--color-shadow-1);
+}
+
+.letter-2 {
+    z-index: 2;
+}
+.letter-3 {
+    z-index: 3;
+}
+.letter-4 {
+    z-index: 4;
+}
+.letter-5 {
+    z-index: 5;
+}
+.letter-6 {
+    z-index: 6;
+}
+.letter-7 {
+    z-index: 7;
+}
+
+.title__word {
+    display: flex;
+    gap: 0.05em;
+}
+
+.title__word > span {
+    display: block;
+    position: relative;
+    transition: translate var(--_hover-duration),
+        text-shadow var(--_hover-duration);
+}
+
+.title__word > span::before {
+    content: attr(data-text);
+    position: absolute;
+    text-shadow: 2px 2px 1px var(--color-border-1),
+        -1px -1px 1px var(--color-border-2), -2px 2px 1px var(--color-border-1),
+        1px -1px 1px var(--color-border-3);
+    z-index: 1;
+}
+
+.title__word > span:hover {
+    translate: 0.06em 0.04em;
+    text-shadow: 0 0 10px var(--color-accent-1),
+        3px 1px 1px var(--color-shadow-1), 2px 2px 1px var(--color-shadow-2),
+        4px 2px 1px var(--color-shadow-1), 3px 3px 1px var(--color-shadow-2),
+        5px 3px 1px var(--color-shadow-1);
+}
+
+/* .word--first {
+    padding-right: 2rem;
+}
+
+.word--second {
+    padding-left: 1em;
+} */

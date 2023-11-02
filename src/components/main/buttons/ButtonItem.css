@@ -1,0 +1,5 @@
+@media screen and (min-width: 1000px) {
+    .button-item-container.showCodeSample {
+        grid-column: span 2;
+    }
+}

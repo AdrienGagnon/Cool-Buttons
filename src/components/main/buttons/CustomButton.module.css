@@ -1,0 +1,33 @@
+button {
+    position: relative;
+    width: 100%;
+    max-width: 20rem;
+    height: 5rem;
+    margin-block: auto;
+    cursor: pointer;
+    margin-inline: auto;
+}
+.button-1 {
+    background-color: var(--color-accent-2);
+    color: var(--color-font);
+    border: 2px solid var(--color-accent-2);
+    font-size: 1.6rem;
+    font-weight: 600;
+    transition: all 200ms;
+}
+.button-1:hover {
+    background: none;
+    color: var(--color-accent-2);
+}
+
+.button-2 {
+    background-color: var(--color-accent-2);
+    border: none;
+    color: var(--color-font);
+    transition: all 200ms;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.button-2:hover {
+    box-shadow: 0 5px 10px var(--color-shadow);
+}

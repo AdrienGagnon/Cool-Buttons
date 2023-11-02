@@ -1,0 +1,26 @@
+.filter-section {
+    background: var(--color-font);
+    border-radius: 1rem;
+    margin-bottom: 5rem;
+    color: var(--color-accent-1);
+    padding: clamp(1rem, 5vw, 3rem);
+    box-shadow: 0 0.5rem 1.5rem var(--box-shadow-item);
+}
+
+h2 {
+    font-size: clamp(1.6rem, 5vw, 3rem);
+    font-weight: 700;
+}
+
+.filter-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.filter-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}

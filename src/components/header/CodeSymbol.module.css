@@ -1,0 +1,34 @@
+.symbol-container {
+    display: flex;
+    align-items: baseline;
+    font-size: max(5.125rem, min(13.3333vw + 2rem, 18rem));
+    margin-right: max(1rem, min(5vw - 1rem, 5rem));
+    line-height: 60%;
+    z-index: 5;
+}
+
+.symbol {
+    height: max(5.125rem, min(13.3333vw + 2rem, 18rem));
+    width: max(5.125rem, min(13.3333vw + 2rem, 18rem));
+    fill: var(--color-font);
+    background: conic-gradient(
+        from 225deg at 60%,
+        var(--color-background) 90deg,
+        transparent 90deg
+    );
+}
+
+.symbol-wrapper {
+    position: relative;
+}
+
+.symbol-wrapper::after {
+    content: '';
+    position: absolute;
+    width: 100vw;
+    background: var(--color-background);
+    height: 100%;
+    top: 0;
+    left: 0;
+    translate: -100% 0;
+}

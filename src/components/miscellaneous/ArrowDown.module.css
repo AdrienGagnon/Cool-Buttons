@@ -1,0 +1,23 @@
+.arrow-container {
+    position: relative;
+    height: 2em;
+    width: 2em;
+    border: 2px solid var(--color-font);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.arrow-container svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    fill: var(--color-font);
+}
+
+.arrow-container svg:last-child {
+    top: -100%;
+    transform: 0 -100%;
+}

@@ -1,0 +1,46 @@
+.word__container {
+    position: relative;
+    isolation: isolate;
+    font-size: max(5.125rem, min(13.3333vw + 2rem, 18rem));
+}
+
+.word__wrapper {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    /* font-size: max(5.125rem, min(13.3333vw + 2rem, 18rem)); */
+}
+
+.letter {
+    display: inline-block;
+    opacity: 0;
+}
+
+.square__wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.square {
+    position: absolute;
+    width: 100%;
+    height: 0;
+}
+
+.square path {
+    stroke: var(--color-contrast-1);
+}
+
+.square__wrapper--lower {
+    z-index: 2;
+}
+
+.square svg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    filter: drop-shadow(0 0 5px var(--color-contrast-1));
+}

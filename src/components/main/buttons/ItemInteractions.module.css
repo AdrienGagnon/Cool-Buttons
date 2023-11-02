@@ -1,0 +1,28 @@
+.btns__interaction {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    cursor: pointer;
+    margin-block: 2rem;
+}
+.btn__interaction {
+    display: flex;
+    align-items: center;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    gap: 1rem;
+    cursor: pointer;
+    transition: all 200ms;
+}
+.btn__interaction svg {
+    width: 2rem;
+    height: 2rem;
+}
+.btn__interaction:hover {
+    background: var(--color-accent-2);
+    color: var(--color-font);
+    fill: var(--color-font);
+}

@@ -1,0 +1,40 @@
+.word__container {
+    display: flex;
+    font-size: max(1.75rem, min(7.57813vw - 1.28125rem, 7.8125rem));
+    /* border: 1px solid red; */
+}
+
+.word__wrapper {
+    display: flex;
+    overflow: hidden;
+}
+
+.word-wrapper--translate,
+.letter__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.word--visible,
+.letter--visible {
+    position: absolute;
+}
+
+.word--visible:nth-child(1),
+.letter--visible:nth-child(1) {
+    translate: 0 -100%;
+}
+
+.word--visible:nth-child(2),
+.letter--visible:nth-child(2) {
+    translate: 0 -200%;
+}
+
+.letter--visible:nth-child(3) {
+    translate: 0 -300%;
+}
+
+.visually-hidden {
+    visibility: hidden;
+}

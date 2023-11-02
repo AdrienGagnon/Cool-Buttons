@@ -1,0 +1,26 @@
+.section-buttons {
+    background: var(--color-accent-1);
+    padding: 5rem 2rem;
+}
+
+.buttons-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+    grid-gap: 5rem;
+    font: var(--color-font-black);
+    grid-template-columns: 1fr;
+}
+
+.main-container {
+    max-width: 120rem;
+    margin-inline: auto;
+}
+
+@media screen and (min-width: 1000px) {
+    .buttons-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    }
+}
